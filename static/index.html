@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#143e34"><title>Time & Place — Make room for what matters</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/" aria-label="Time and Place home"><span class="brand-icon">◷</span> time & place<span class="version">PILOT 0.1</span></a><div class="header-actions"><span id="mode" class="badge">A little intention. A real place.</span><button id="logout" class="quiet hidden">Sign out</button></div></header>
+<main>
+<section id="welcome" class="welcome">
+<div class="eyebrow">LESS PRESSURE. MORE PRESENCE.</div><h1>Make room for<br>what <em>matters.</em></h1><p class="intro">An intention becomes an achievement when it has a time and a place. Let’s find yours—without filling every moment.</p>
+<div class="welcome-actions"><a class="button primary" href="/auth/google">Connect Google Calendar <span>↗</span></a><button id="demo" class="button secondary">Explore the local demo</button></div>
+<p id="credentials" class="small">Google Calendar stays your calendar. Nothing gets added without your approval.</p>
+<div class="principles"><div><span>01</span><h3>Tell it naturally</h3><p>What do you want to make time for?</p></div><div><span>02</span><h3>Find a good moment</h3><p>A realistic day, with room to breathe.</p></div><div><span>03</span><h3>You have the final say</h3><p>Review, adjust, then protect the time.</p></div></div>
+<div class="ambient" aria-hidden="true"><div class="orbit"></div><div class="sun"></div><div class="small-dot"></div><div class="ambient-caption">Space is part of the plan.</div></div>
+</section>
+<section id="workspace" class="workspace hidden">
+<aside class="sidebar"><div class="eyebrow">YOUR RHYTHM</div><h2>A day that<br>feels like yours.</h2><p class="muted">There’s more to capacity than an empty calendar.</p><div class="rhythm"><span class="rhythm-dot"></span><div><strong id="sync-label">Calendar connection</strong><p id="sync-info">Checking your commitments…</p></div></div><button id="sync" class="quiet">↻ Sync calendar</button><a id="calendar-link" href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" class="calendar-link">Open Google Calendar ↗</a><div class="aside-note"><span>✳</span><p>Personal time is a real commitment. We leave breathing room in every day.</p></div><details><summary>Your preferences & context</summary><div id="profile" class="profile"></div><p class="small">Basic mode stores narrative context but only enforces explicit hours and constraints. Include activity-specific constraints in your request.</p></details></aside>
+<div class="conversation"><div class="conversation-heading"><div><div class="eyebrow">A LITTLE SPACE TO THINK</div><h2>What matters next?</h2></div><button id="daily" class="quiet">☾ Close the day</button></div>
+<div id="demo-banner" class="demo-banner hidden">LOCAL DEMO · Example calendar only. No Google events are read or written.</div><div id="interpreter" class="small engine"></div>
+<div id="messages" class="messages" aria-live="polite"></div>
+<div id="proposal" class="proposal hidden" aria-live="polite"></div>
+<div id="review" class="review hidden"></div>
+<div class="composer-wrap"><form id="chat-form"><label for="input" class="sr-only">Your intention or reply</label><textarea id="input" dir="auto" rows="2" placeholder="I’d like to make time for…" maxlength="6000" required></textarea><div class="composer-footer"><span id="input-hint">One intention is enough to begin.</span><button type="submit" id="send" aria-label="Send message">↑</button></div></form><p class="small privacy">Your time, your choice. Calendar changes always need approval.</p></div></div>
+</section>
+<div id="status" class="status hidden" role="status"></div>
+</main><footer>A realistic day is a good day.<span>TIME & PLACE</span></footer>
+</body></html>
